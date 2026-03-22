@@ -4,7 +4,8 @@ module.exports = {
   PORT: parseInt(process.env.PORT || '3020', 10),
 
   // Enterprise Cloud Agent — used for DID resolution and revocation checking
-  ENTERPRISE_CLOUD_AGENT_URL:     process.env.ENTERPRISE_CLOUD_AGENT_URL || 'http://91.99.4.54:8300',
+  // Multitenancy agent (8200) — hosts all company tenants including ACME and Techcorp
+  ENTERPRISE_CLOUD_AGENT_URL:     process.env.ENTERPRISE_CLOUD_AGENT_URL || 'http://91.99.4.54:8200',
   ENTERPRISE_CLOUD_AGENT_API_KEY: process.env.ENTERPRISE_CLOUD_AGENT_API_KEY || '',
 
   // Iagon decentralized storage
